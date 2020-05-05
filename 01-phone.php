@@ -4,7 +4,27 @@
 
 declare(strict_types=1);
 
-// ... your class here
+class Phone 
+{
+    private $model;
+    private $make;
+
+    public function __construct(string $make, string $model)
+    {
+        $this->model = $model;
+        $this->make = $make;
+    }
+
+    public function model() 
+    {
+        return $this->model;
+    }
+
+    public function make() 
+    {
+        return $this->make;
+    }
+}
 
 // create three phones
 $iPhone = new Phone("Apple", "iPhone XS");
