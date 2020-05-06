@@ -26,7 +26,7 @@ class Car
         return $this->make;
     }
 
-    public function addJourney(int $miles) : int
+    public function addJourney(int $miles)
     {
         $this->mileage += $miles;
         return $this;
